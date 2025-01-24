@@ -28,18 +28,27 @@
       background: white;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    section {
+      margin-bottom: 30px;
     }
-    li {
+    h2 {
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
+      color: #007BFF;
+    }
+    .item {
       margin: 10px 0;
+      padding: 10px;
+      background: #f0f0f0;
+      border-radius: 5px;
+    }
+    .item:hover {
+      background: #e8e8e8;
     }
     a {
       text-decoration: none;
       color: #007BFF;
-      font-size: 18px;
-      transition: color 0.3s;
+      font-weight: bold;
     }
     a:hover {
       color: #0056b3;
@@ -55,20 +64,65 @@
 <body>
   <header>
     <h1>Dynamics</h1>
-    <p>Course materials and resources for Dynamics.</p>
+    <p>Explore slides, weekly questions, and answers for the Dynamics course.</p>
   </header>
   <div class="content">
-    <h2>Available Materials</h2>
-    <ul>
-      <li><a href="questions.html">Questions</a></li>
-      <li><a href="slides.html">Slides</a></li>
-      <li><a href="additional-resources.html">Additional Resources</a></li>
-    </ul>
-    <h2>About This Course</h2>
-    <p>This course covers the fundamental principles of Dynamics, including kinematics, kinetics, and the study of motion. Explore the materials above to deepen your understanding.</p>
+    <!-- Slides Section -->
+    <section id="slides">
+      <h2>Slides</h2>
+      <div class="item">
+        <a href="slide1.pdf" target="_blank">Slide 1: Introduction to Dynamics</a>
+        <p>Preview: Understand the basics of dynamics, including motion and force principles.</p>
+      </div>
+      <div class="item">
+        <a href="slide2.pdf" target="_blank">Slide 2: Kinematics of Particles</a>
+        <p>Preview: Learn the equations of motion and trajectory analysis for particles.</p>
+      </div>
+      <div class="item">
+        <a href="slide3.pdf" target="_blank">Slide 3: Kinetics of Particles</a>
+        <p>Preview: Dive into force-mass-acceleration relationships and energy methods.</p>
+      </div>
+    </section>
+
+    <!-- Questions Section -->
+    <section id="questions">
+      <h2>Questions</h2>
+      <div class="item">
+        <a href="questions/week1-questions.pdf" target="_blank">Week 1 Questions</a>
+        <p>Preview: Includes problems on basic kinematics and motion in one dimension.</p>
+      </div>
+      <div class="item">
+        <a href="questions/week2-questions.pdf" target="_blank">Week 2 Questions</a>
+        <p>Preview: Covers problems on forces and Newton’s laws of motion.</p>
+      </div>
+      <!-- Add more weeks as needed up to Week 11 -->
+      <div class="item">
+        <a href="questions/week11-questions.pdf" target="_blank">Week 11 Questions</a>
+        <p>Preview: Final week problems focusing on advanced dynamics topics.</p>
+      </div>
+    </section>
+
+    <!-- Answers Section -->
+    <section id="answers">
+      <h2>Answers</h2>
+      <div class="item">
+        <a href="answers/week1-answers.pdf" target="_blank">Week 1 Answers</a>
+        <p>Preview: Detailed solutions for Week 1 questions on kinematics.</p>
+      </div>
+      <div class="item">
+        <a href="answers/week2-answers.pdf" target="_blank">Week 2 Answers</a>
+        <p>Preview: Solutions explaining forces and applications of Newton’s laws.</p>
+      </div>
+      <!-- Add more weeks as needed up to Week 11 -->
+      <div class="item">
+        <a href="answers/week11-answers.pdf" target="_blank">Week 11 Answers</a>
+        <p>Preview: Comprehensive solutions for Week 11 problems.</p>
+      </div>
+    </section>
   </div>
   <footer>
     <p>&copy; 2025 University Courses. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
+
