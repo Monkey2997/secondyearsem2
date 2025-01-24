@@ -13,7 +13,7 @@
       color: #333;
     }
     header {
-      background-color: #007BFF;
+      background-color: ##6f57a3;
       color: white;
       padding: 20px;
       text-align: center;
@@ -28,39 +28,74 @@
       background: white;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
-    li {
-      margin: 10px 0;
+    .course-box {
+      padding: 15px;
+      background: #f0f0f0;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+    .course-box:hover {
+      background-color: #e8e8e8;
     }
     a {
       text-decoration: none;
-      color: #007BFF;
+      color: ##6f57a3;
+      font-weight: bold;
       font-size: 18px;
-      transition: color 0.3s;
+      display: block;
     }
     a:hover {
       color: #0056b3;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>University Courses</h1>
-    <p>Explore course materials for your university subjects.</p>
+    <p>Access materials for your university courses below.</p>
   </header>
   <div class="content">
-    <h2>Available Courses</h2>
-    <ul>
-      <li><a href="dynamics/index.html">Dynamics</a></li>
-      <li><a href="maths/index.html">Maths</a></li>
-      <li><a href="thermodynamics/index.html">Thermodynamics</a></li>
-      <li><a href="materials/index.html">Materials</a></li>
-      <li><a href="pde/index.html">PDE</a></li>
-      <li><a href="ted/index.html">TED</a></li>
-    </ul>
+    <section>
+      <div class="course-box">
+        <a href="dynamics/index.html">Dynamics</a>
+        <p>Explore course materials, weekly questions, and slides for Dynamics.</p>
+      </div>
+      <div class="course-box">
+        <a href="maths/index.html">Maths</a>
+        <p>Access slides and problem sets for advanced mathematics topics.</p>
+      </div>
+      <div class="course-box">
+        <a href="thermodynamics/index.html">Thermodynamics</a>
+        <p>Find lecture slides and problem sheets for Thermodynamics.</p>
+      </div>
+      <div class="course-box">
+        <a href="materials/index.html">Materials</a>
+        <p>Dive into slides and exercises for Materials science and engineering.</p>
+      </div>
+      <div class="course-box">
+        <a href="pde/index.html">Partial Differential Equations (PDE)</a>
+        <p>Access detailed resources for solving PDEs and related problems.</p>
+      </div>
+      <div class="course-box">
+        <a href="ted/index.html">TED (Technical Engineering Design)</a>
+        <p>Discover resources and exercises for Technical Engineering Design.</p>
+      </div>
+    </section>
   </div>
+  <footer>
+    <p>&copy; 2025 University Courses. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
