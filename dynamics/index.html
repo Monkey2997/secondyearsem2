@@ -9,55 +9,73 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #121212;
+      color: #e0e0e0;
     }
     header {
-      background-color: #6f57a3;
-      color: white;
+      background-color: #E786A9;
+      color: #ffffff;
       padding: 20px;
       text-align: center;
+      border-bottom: 1px solid #333;
     }
     h1 {
       margin: 0;
     }
     .content {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 20px auto;
       padding: 20px;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background: #1e1e1e;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-radius: 8px;
+    }
+    .column {
+      width: 48%;
+      min-width: 300px;
     }
     section {
       margin-bottom: 30px;
     }
     h2 {
-      border-bottom: 2px solid #6f57a3;
+      border-bottom: 2px solid #E786A9;
       padding-bottom: 5px;
-      color: #6f57a3;
+      color: #E786A9;
     }
     .item {
       margin: 10px 0;
-      padding: 10px;
-      background: #f0f0f0;
-      border-radius: 5px;
+      padding: 12px;
+      background: #E786A9;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      border-left: 3px solid #E786A9;
     }
     .item:hover {
-      background: #e8e8e8;
+      background: #383838;
+      transform: translateX(3px);
     }
     a {
       text-decoration: none;
-      color: #6f57a3;
+      color: #ffffff;
       font-weight: bold;
     }
     a:hover {
-      color: #0056b3;
+      color: #E786A9;
+      text-decoration: underline;
     }
     footer {
       text-align: center;
       margin-top: 20px;
       font-size: 14px;
       color: #666;
+    }
+    @media (max-width: 768px) {
+      .column {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -67,106 +85,109 @@
     <p>Explore slides, weekly questions, and answers for the Dynamics course.</p>
   </header>
   <div class="content">
-    <!-- Slides Section -->
-    <section id="slides">
-      <h2>Slides</h2>
-      <div class="item">
-        <a href="slide1a.pdf" target="_blank">Week 1 Lecture 1</a>
-      </div>
-      <div class="item">
-        <a href="slide1b.pdf" target="_blank">Week 1 Lecture 2</a>
-      </div>
-      <div class="item">
-        <a href="slide2a.pdf" target="_blank">Week 2 Lecture 1</a>
-      </div>
-      <div class="item">
-        <a href="slide2b.pdf" target="_blank">Week 2 Lecture 2</a>
-      </div>
-      <div class="item">
-        <a href="slide3.pdf" target="_blank">Week 3 Lecture</a>
-      </div>
-      <div class="item">
-        <a href="slide4.pdf" target="_blank">Week 4 Lecture</a>
-      </div>
-      <div class="item">
-        <a href="slide5.pdf" target="_blank">Week 5 Lecture</a>
-      </div>
-      <div class="item">
-        <a href="slide6a.pdf" target="_blank">Week 6 Lecture 1</a>
-      </div>
-      <div class="item">
-        <a href="slide6b.pdf" target="_blank">Week 6 Lecture 2</a>
-      </div>
-      <div class="item">
-        <a href="slide7a.pdf" target="_blank">Week 7 Lecture 1</a>
-      </div>
-      <div class="item">
-        <a href="slide7b.pdf" target="_blank">Week 7 Lecture 2</a>
-      </div>
-      <div class="item">
-        <a href="slide8.pdf" target="_blank">Week 8 Lecture</a>
-      </div>
-      <div class="item">
-        <a href="slide9.pdf" target="_blank">Week 9 Lecture</a>
-      </div>
+    <!-- Left Column - Slides -->
+    <div class="column">
+      <section id="slides">
+        <h2>Slides</h2>
+        <div class="item">
+          <a href="slide1a.pdf" target="_blank">Week 1 Lecture 1</a>
+        </div>
+        <div class="item">
+          <a href="slide1b.pdf" target="_blank">Week 1 Lecture 2</a>
+        </div>
+        <div class="item">
+          <a href="slide2a.pdf" target="_blank">Week 2 Lecture 1</a>
+        </div>
+        <div class="item">
+          <a href="slide2b.pdf" target="_blank">Week 2 Lecture 2</a>
+        </div>
+        <div class="item">
+          <a href="slide3.pdf" target="_blank">Week 3 Lecture</a>
+        </div>
+        <div class="item">
+          <a href="slide4.pdf" target="_blank">Week 4 Lecture</a>
+        </div>
+        <div class="item">
+          <a href="slide5.pdf" target="_blank">Week 5 Lecture</a>
+        </div>
+        <div class="item">
+          <a href="slide6a.pdf" target="_blank">Week 6 Lecture 1</a>
+        </div>
+        <div class="item">
+          <a href="slide6b.pdf" target="_blank">Week 6 Lecture 2</a>
+        </div>
+        <div class="item">
+          <a href="slide7a.pdf" target="_blank">Week 7 Lecture 1</a>
+        </div>
+        <div class="item">
+          <a href="slide7b.pdf" target="_blank">Week 7 Lecture 2</a>
+        </div>
+        <div class="item">
+          <a href="slide8.pdf" target="_blank">Week 8 Lecture</a>
+        </div>
+        <div class="item">
+          <a href="slide9.pdf" target="_blank">Week 9 Lecture</a>
+        </div>
+        <div class="item">
+          <a href="slide10.pdf" target="_blank">Week 10 Lecture</a>
+        </div>
+      </section>
+    </div>
 
-      <div class="item">
-        <a href="slide10.pdf" target="_blank">Week 10 Lecture</a>
-      </div>
-    </section>
-
-    <!-- Questions Section -->
-    <section id="questions">
-      <h2>Questions and Answers</h2>
-      <div class="item">
-        <a href="questions/q2.pdf" target="_blank">Week 2 Questions</a>
-      </div>
-      <div class="item">
-        <a href="questions/a2.pdf" target="_blank">Week 2 Answers</a>
-      </div>
-      <div class="item">
-        <a href="questions/q3.pdf" target="_blank">Week 3 Questions</a>
-      </div>
-      <div class="item">
-        <a href="questions/a3.pdf" target="_blank">Week 3 Answers</a>
-      </div>
-      <div class="item">
-        <a href="questions/q4.pdf" target="_blank">Week 4 Questions</a>
-      </div>
-      <div class="item">
-        <a href="questions/a4.pdf" target="_blank">Week 4 Answers</a>
-      </div>
-      <div class="item">
-        <a href="questions/q5.pdf" target="_blank">Week 5 Questions</a>
-      </div>
-      <div class="item">
-        <a href="questions/a5.pdf" target="_blank">Week 5 Answers</a>
-      </div>
-      <div class="item">
-        <a href="questions/q6.pdf" target="_blank">Week 6 Questions</a>
-      </div>
-      <div class="item">
-        <a href="questions/a6.pdf" target="_blank">Week 6 Answers</a>
-      </div>
-      <div class="item">
-        <a href="questions/q8.pdf" target="_blank">Week 8 Questions</a>
-      </div>
-      <div class="item">
-        <a href="questions/a8.pdf" target="_blank">Week 8 Answers</a>
-      </div>
-      <div class="item">
-        <a href="questions/q9.pdf" target="_blank">Week 9 Questions</a>
-      </div>
-      <div class="item">
-        <a href="questions/a9.pdf" target="_blank">Week 9 Answers</a>
-      </div>
-      <div class="item">
-        <a href="questions/q10.pdf" target="_blank">Week 10 Questions</a>
-      </div>
-      <div class="item">
-        <a href="questions/a10.pdf" target="_blank">Week 10 Answers not out yet</a>
-      </div>
-    </section>
+    <!-- Right Column - Questions and Answers -->
+    <div class="column">
+      <section id="questions">
+        <h2>Questions and Answers</h2>
+        <div class="item">
+          <a href="questions/q2.pdf" target="_blank">Week 2 Questions</a>
+        </div>
+        <div class="item">
+          <a href="questions/a2.pdf" target="_blank">Week 2 Answers</a>
+        </div>
+        <div class="item">
+          <a href="questions/q3.pdf" target="_blank">Week 3 Questions</a>
+        </div>
+        <div class="item">
+          <a href="questions/a3.pdf" target="_blank">Week 3 Answers</a>
+        </div>
+        <div class="item">
+          <a href="questions/q4.pdf" target="_blank">Week 4 Questions</a>
+        </div>
+        <div class="item">
+          <a href="questions/a4.pdf" target="_blank">Week 4 Answers</a>
+        </div>
+        <div class="item">
+          <a href="questions/q5.pdf" target="_blank">Week 5 Questions</a>
+        </div>
+        <div class="item">
+          <a href="questions/a5.pdf" target="_blank">Week 5 Answers</a>
+        </div>
+        <div class="item">
+          <a href="questions/q6.pdf" target="_blank">Week 6 Questions</a>
+        </div>
+        <div class="item">
+          <a href="questions/a6.pdf" target="_blank">Week 6 Answers</a>
+        </div>
+        <div class="item">
+          <a href="questions/q8.pdf" target="_blank">Week 8 Questions</a>
+        </div>
+        <div class="item">
+          <a href="questions/a8.pdf" target="_blank">Week 8 Answers</a>
+        </div>
+        <div class="item">
+          <a href="questions/q9.pdf" target="_blank">Week 9 Questions</a>
+        </div>
+        <div class="item">
+          <a href="questions/a9.pdf" target="_blank">Week 9 Answers</a>
+        </div>
+        <div class="item">
+          <a href="questions/q10.pdf" target="_blank">Week 10 Questions</a>
+        </div>
+        <div class="item">
+          <a href="questions/a10.pdf" target="_blank">Week 10 Answers not out yet</a>
+        </div>
+      </section>
+    </div>
   </div>
 </body>
 </html>
